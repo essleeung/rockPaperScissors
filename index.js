@@ -1,10 +1,16 @@
-// let rulesButton = document.getElementsByClassName('rules-btn')
-// let rulesPic = document.getElementById('modal')
-// // rules modal
-// function modalOpen() {
-//     rulesPic.setAttribute('class', 'show')
-//     console.log('open modal')
-// }
-// window.addEventListener('DOMContentLoaded', (e) => {
-//     rulesButton.addEventListener('click', modalOpen())
-// });
+let rulesBtn = document.getElementById('rules-btn')
+let modal = document.getElementById('rules-wrapper')
+let modalOverlay = document.getElementById('rules-overlay')
+let closeBtn = document.getElementById('close-btn')
+
+// rules modal
+rulesBtn.addEventListener("click", function() {
+    modalOverlay.classList.toggle('closed')
+    modal.classList.toggle('closed')
+
+})
+closeBtn.addEventListener("click", function() {
+    modalOverlay.classList.toggle('closed')
+    modal.classList.toggle('closed')
+})
+
