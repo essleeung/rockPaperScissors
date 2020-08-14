@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Rock, Paper, Scissors</title>
-
-  Score
-  Rules
-
-  You Picked
-  The House Picked
-
-  You Win
-  You Lose
-
-  Play Again
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Rock, Paper, Scissors</title>
 </head>
+
 <body>
+  <!-- Score Counter & Title  -->
+  <div class="wrapper">
+    <div class="score-wrapper">
+      <ul>
+        <li>Rock</li>
+        <li>Paper</li>
+        <li>Scissors</li>
+      </ul>
+      <div class="score">
+        <p>Score</p>
+        <p id="score-count">12</h1>
+      </div>
+    </div>
 
+    <!-- move selection icons -->
+    <div class="move-wrapper">
+      <div class="circle blue">
+        <img src="images/icon-paper.svg" alt="hand icon">
+      </div>
+      <div class="circle yellow">
+        <img src="images/icon-scissors.svg" alt="scissors icon">
+      </div>
+      <div class="circle red">
+        <img src="images/icon-rock.svg" alt="paper icon">
+      </div>
+    </div>
 
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
   </div>
+  <!-- Rules Button with Modal -->
+  <button class="rules-btn">Rules</button>
+
+  <div class="rules-overlay">
+    <div class="rules-wrapper">
+      <div class="rules-title">
+        <p>Rules</p>
+        <div class="cross-btn">
+          <img src="images/icon-close.svg" alt="close">
+        </div>
+      </div>
+      <div class="rules-img"><img src="images/image-rules.svg" alt="rules"></div>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Sharon Lee</a>.
+  </div>
+
+  <script src="/index.js"></script>
 </body>
+
 </html>
